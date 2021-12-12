@@ -8,9 +8,12 @@ function Fish(options) {
         vel: Util.randomVec(4), 
         size: options.size, 
         game: options.game, 
-        typeId: Util.random(0, 2)
+        typeId: Util.random(0, 2),
+        level: options.level
     })
 }
+
+// fish.size is not changed with fish.level, they each have to incremented separately rn, would be good to tie them together later to DRY
 
 Util.inherits(Fish, MovingObject); 
 

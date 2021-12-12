@@ -13,7 +13,7 @@ function Tank() {
     this.food = [];
     this.addFood(); 
     this.poops = []; 
-    this.money = 100;
+    this.money = 100000;
     this.foodLimit = 3; 
     this.waterColor = "#1D4E89"; 
     this.airColor = '#FFFFFF'; 
@@ -145,12 +145,14 @@ Tank.prototype.addFish = function() {
     let fish1 = new Fish({
         pos: [50, 300],
         size: [30, 30],
+        level: 1, 
         game: this
     })
     this.fishes.push(fish1); 
     let fish2 = new Fish({
         pos: [500, 300],
         size: [30, 30],
+        level: 1,
         game: this
     })
     this.fishes.push(fish2); 
