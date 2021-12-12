@@ -49,7 +49,7 @@ View.prototype.eventSet = function() {
             const newFish = new Fish( 
                 {pos: [300, 300],
                 size: [30, 30], 
-                level: 1
+                sizeLevel: 1
                 })
             tank01.fishes.push(newFish); 
         }
@@ -78,11 +78,9 @@ View.prototype.eventSet = function() {
         // }
         if(tank01.money >= 5000) {
             for(let i = 0; i < tank01.fishes.length; i++) {
-                debugger
                 let fish_instance = tank01.fishes[i]; 
-                if(fish_instance.level < 10) {
-                    debugger
-                    fish_instance.level += 1; 
+                if(fish_instance.sizeLevel < 10) {
+                    fish_instance.sizeLevel += 1; 
                     fish_instance.size[0] += 5
                     fish_instance.size[1] += 5
                 }

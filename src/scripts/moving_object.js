@@ -3,9 +3,8 @@ function MovingObject(options) {
     this.vel = options.vel; 
     this.game = options.game; 
     this.size = options.size;
-    this.level = options.level; 
+    this.sizeLevel = options.sizeLevel; 
     this.typeId = options.typeId; 
-    this.level = options.level; 
 }
 
 module.exports = MovingObject;

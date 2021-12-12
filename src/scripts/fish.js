@@ -9,7 +9,7 @@ function Fish(options) {
         size: options.size, 
         game: options.game, 
         typeId: Util.random(0, 2),
-        level: options.level
+        sizeLevel: options.sizeLevel
     })
 }
 

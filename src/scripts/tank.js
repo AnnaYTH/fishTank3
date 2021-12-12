@@ -145,14 +145,14 @@ Tank.prototype.addFish = function() {
     let fish1 = new Fish({
         pos: [50, 300],
         size: [30, 30],
-        level: 1, 
+        sizeLevel: 1, 
         game: this
     })
     this.fishes.push(fish1); 
     let fish2 = new Fish({
         pos: [500, 300],
         size: [30, 30],
-        level: 1,
+        sizeLevel: 1,
         game: this
     })
     this.fishes.push(fish2); 
@@ -280,6 +280,7 @@ Tank.prototype.changeAir = function() {
     this.airColor = colors[colorNum]; 
 }
 
+// going to tie the size of the poop to the level of the fish that pooped it
 Tank.prototype.checkCollision = function() {
     for(let i = 0; i < this.fishes.length; i++) {
         let fish_instance = this.fishes[i]; 
