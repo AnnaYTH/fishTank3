@@ -11,6 +11,10 @@
     padding: 10px; 
 }
 
+#stats-title {
+    font-size: 35px;
+}
+
 #horizontal {
     display: flex; 
     flex-direction: row;
@@ -33,10 +37,21 @@
     // flex-direction: column; 
     border: solid #5a3920 5px;
     border-radius: 20px;
+    // justify-content: space-around;
 }
 
 #store > ul {
     list-style: none;  
+}
+
+#store-title {
+    font-size: 25px;
+    padding: 10px;
+    // border: solid #000 5px; 
+    // justify-content: space-around;
+}
+#button-description {
+    font-size: 14px;
 }
 
 .button {

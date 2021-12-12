@@ -130,3 +130,6 @@ View
     has so little at the moment, will eventually be used to incorporate a player class and tank instance so everyone has their own game 
 
 Fish can merge / an older fish an eat a younger fish to "evolve"
+
+
+npm install @babel/core @babel/preset-env babel-loader core-js css-loader mini-css-extract-plugin regenerator-runtime sass sass-loader webpack webpack-cli

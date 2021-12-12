@@ -9,6 +9,10 @@
   padding: 10px;
 }
 
+#stats-title {
+  font-size: 35px;
+}
+
 #horizontal {
   display: flex;
   flex-direction: row;
@@ -31,6 +35,15 @@
 
 #store > ul {
   list-style: none;
+}
+
+#store-title {
+  font-size: 25px;
+  padding: 10px;
+}
+
+#button-description {
+  font-size: 14px;
 }
 
 .button {

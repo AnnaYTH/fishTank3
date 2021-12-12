@@ -22,6 +22,7 @@
                 <p id='instruction_text'>
                     Aspiring plant parents, gardeners, and farmers want to buy your pets' poops. It apparently makes great fertilizer. This is now your life. Are you ready?
                 </p>
+                <p><sub> *If you would just like to explore and try out buttons feel free to start by clicking the "Watch Ad" button! </sub></p>
                 <p>
                     <button class='instruction_button' id='hide_instructions' onclick="hide()"> I'm Ready! </button>
                 </p>
@@ -57,7 +58,8 @@
 
         <div id='vertical' class='vertical' style='overflow-y: scroll'>
             <hr>
-            <div id='stats' class='stats'> Statistics
+            <div id='stats' class='stats'> 
+                <p class='stats-title' id='tank-stats-title'>Statistics:</p>
                 <div id='money'> </div>
                 <div id='numOfFish'> </div>
                 <div id='numOfFood'> </div>
@@ -106,18 +108,24 @@
             <hr>
 
             <div id='store'>
-                <p> Store </p>
+                <p id='store-title' > Store </p>
                 <ul>
                     <li>
-                        <button class="button" id='new_fish_button' type= 'button' title='Buy a New Fish for 100 coins'> Buy New Fish </button>
+                        <p id='button-description'> Buy A New Fish </p>
+                        <button class="button" id='new_fish_button' type= 'button' title='Buy a New Fish for 100 coins'> 100 Coins</button>
                     </li>
                     <li>
-                        <button class='button' id='increase_food_limit' title='Increase the amount of food you can drop by one for $500 (limit 10)'> Increase Food Limit </button>
+                        <p  id='button-description'>Increase Food Limit (Limit 10)</p>
+                        <button class='button' id='increase_food_limit' title='Increase the amount of food you can drop by one for $500 (limit 10)'> 500 coins </button>
                     </li>
                     <li>
-                        <button class='button' id='increase_fish_size' title='For 5000 increase the size of all your fish (Limit 10)'> Grow Your Fish </button>
+                        <p id='button-description'>Grow Your Fish (Limit 10)</p>
+                        <p id='button-description'><sub> Increases the size of the fish hitbox</sub></p>
+                        <button class='button' id='increase_fish_size' title='For 5000 increase the size of all your fish (Limit 10)'> 5000 coins </button>
                     </li>
                     <li>
+                        <p id='button-description'> Level Up Your Fish (Limit 10)</p>
+                        <p id='button-description'><sub>increase the level of your fish (this will increase the size of their poops)</sub></p>
                         <button class='button' id='increase_fish_level' title='for 5000 increase the level of your fish (this will increase the size of their poops)Limit 10.'> Level up your Fish</button>
                     </li>
                     <li>

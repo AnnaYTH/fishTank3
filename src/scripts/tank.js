@@ -174,6 +174,8 @@ Tank.prototype.nameTank = function() {
         text = humanInput;
         const name = document.getElementById('name'); 
         name.innerText = `${text}`
+        const statName = document.getElementById('tank-stats-title'); 
+        statName.innerText = `${text}'s Statistics: `
     }
 }
 
@@ -254,7 +256,6 @@ Tank.prototype.changeWater = function() {
     ]
     let colors = blueColors.concat(purpleColors); 
     let colorNum = Util.random(0, colors.length)
-    debugger
     this.waterColor = colors[colorNum]
 }
 
