@@ -2,9 +2,8 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
 .stats {
-  border: solid #5a3920 5px;
-  background-color: #ffeebd;
-  font-family: "Georgia";
+  border: solid #1D4E89 5px;
+  background-color: #B38CB4;
   border-radius: 20px;
   padding: 10px;
 }
@@ -25,11 +24,10 @@
 }
 
 #store {
-  font-family: "Georgia";
-  background-color: #ee9c39;
+  background-color: #7DCFB6;
   text-align: left;
   padding: 10px;
-  border: solid #5a3920 5px;
+  border: solid #1D4E89 5px;
   border-radius: 20px;
 }
 
@@ -44,16 +42,17 @@
 
 #button-description {
   font-size: 14px;
+  width: 90%;
 }
 
 .button {
   border-radius: 20px;
   font-size: 16px;
-  background-color: #ffeebd;
+  background-color: #00B2CA;
   padding: 10px 10px;
   width: 90%;
   transition-duration: 1s;
-  border: 10px solid #ee9c39;
+  border: 10px solid #1D4E89;
 }
 
 .button:hover {
@@ -63,11 +62,11 @@
 
 #name {
   font-size: 30px;
-  font-family: "Georgia";
 }
 
 body {
   background-color: #d7f8ff;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -80,7 +79,7 @@ body {
   position: fixed;
   left: 25%;
   top: 100px;
-  border: solid #5a3920 5px;
+  border: solid #1D4E89 5px;
   border-radius: 20px;
   background-color: #eebd8b;
   width: 400px;
@@ -100,13 +99,13 @@ body {
 }
 
 .socials {
-  border: solid #5a3920 5px;
+  border: solid #1D4E89 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 10px;
   border-radius: 20px;
-  background-color: #eebd8b;
+  background-color: #FBD1A2;
 }
 
 .win_condition {
@@ -117,6 +116,5 @@ body {
   border-radius: 20px;
   background-color: #eebd8b;
   padding: 10px;
-  font-family: "Georgia";
   width: 400px;
 }

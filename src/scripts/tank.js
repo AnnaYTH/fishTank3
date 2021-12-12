@@ -15,7 +15,8 @@ function Tank() {
     this.poops = []; 
     this.money = 100;
     this.foodLimit = 3; 
-    this.waterColor = '#A7C7E7'; 
+    this.waterColor = "#1D4E89"; 
+    this.airColor = '#FFFFFF'; 
     this.fishSize = 1; 
     this.fishLevel = 1; 
     this.poopSize = [15, 15]; 
@@ -26,10 +27,15 @@ function Tank() {
 
 Tank.prototype.draw = function(ctx) {
     ctx.clearRect(0, 0, 900, 500); 
-    ctx.fillStyle = this.waterColor
-    ctx.fillRect(0, 0, 900, 500); // water
-    ctx.fillStyle = '#cdcdcd' 
-    ctx.fillRect(0, 0, 900, 25); // air
+    // ctx.fillStyle = this.waterColor; 
+    // ctx.fillRect(0, 0, 900, 500); // water
+    // ctx.fillStyle = this.airColor; 
+    // ctx.fillRect(0, 0, 900, 25); // air
+    const grid = ctx.createLinearGradient(0, -200, 0, 900)
+    grid.addColorStop(0, this.airColor); 
+    grid.addColorStop(1, this.waterColor)
+    ctx.fillStyle = grid; 
+    ctx.fillRect(0, 0, 900, 500)
     
     this.drawFish(ctx); 
     this.drawFood(ctx); 
@@ -255,8 +261,21 @@ Tank.prototype.changeWater = function() {
         '#BDB5D5'
     ]
     let colors = blueColors.concat(purpleColors); 
-    let colorNum = Util.random(0, colors.length)
+    let colorNum = Util.random(0, colors.length - 1)
     this.waterColor = colors[colorNum]
+}
+
+Tank.prototype.changeAir = function() {
+    let colors = [
+        "#FDDFDF", 
+        "#FCF7DE", 
+        "#DEF3FD", 
+        "#F0DEFD",
+        "#00B2CA",
+        '#cdcdcd'
+    ]
+    let colorNum = Util.random(0, colors.length - 1); 
+    this.airColor = colors[colorNum]; 
 }
 
 Tank.prototype.checkCollision = function() {

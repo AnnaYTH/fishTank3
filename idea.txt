@@ -133,3 +133,6 @@ Fish can merge / an older fish an eat a younger fish to "evolve"
 
 
 npm install @babel/core @babel/preset-env babel-loader core-js css-loader mini-css-extract-plugin regenerator-runtime sass sass-loader webpack webpack-cli
+
+color palette
+https://coolors.co/f79256-fbd1a2-7dcfb6-00b2ca-1d4e89-b38cb4

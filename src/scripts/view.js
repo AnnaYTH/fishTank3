@@ -113,6 +113,12 @@ View.prototype.eventSet = function() {
         tank01.changeWater(); 
     })
 
+    //change the color of the air "time of day"
+    const changeAirButton = document.getElementById("change_air_color"); 
+    changeAirButton.addEventListener("click", function() {
+        tank01.changeAir(); 
+    })
+
     // want to name your tank?
     const renameButton = document.getElementById("rename_tank"); 
     renameButton.addEventListener("click", function() {
@@ -127,6 +133,12 @@ View.prototype.eventSet = function() {
         tank01.money += 100000; 
     })
     
+    // see the intro text again 
+    const instructionButton = document.getElementById("show_instructions"); 
+    instructionButton.addEventListener("click", function() {
+        const instruct = document.getElementById("instruction")
+        instruct.style.visibility = 'visible'; 
+    })
 }
 
 
