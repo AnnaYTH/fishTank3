@@ -31,7 +31,7 @@ Tank.prototype.draw = function(ctx) {
     // ctx.fillRect(0, 0, 900, 500); // water
     // ctx.fillStyle = this.airColor; 
     // ctx.fillRect(0, 0, 900, 25); // air
-    const grid = ctx.createLinearGradient(0, -200, 0, 900)
+    const grid = ctx.createLinearGradient(0, -300, 0, 900)
     grid.addColorStop(0, this.airColor); 
     grid.addColorStop(1, this.waterColor)
     ctx.fillStyle = grid; 
