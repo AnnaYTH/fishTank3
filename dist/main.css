@@ -3,7 +3,7 @@
   \*************************************************************************************************************************************/
 .stats {
   border: solid #1D4E89 5px;
-  background-color: #B38CB4;
+  background-color: #9EE493;
   border-radius: 20px;
   padding: 10px;
 }
@@ -66,8 +66,9 @@
 }
 
 body {
-  background-color: #d7f8ff;
+  background-color: #F79256;
   font-family: "Source Sans 3", sans-serif;
+  color: #1D4E89;
 }
 
 ::-webkit-scrollbar {

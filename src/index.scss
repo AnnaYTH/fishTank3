@@ -5,7 +5,7 @@
 
 .stats {
     border: solid #1D4E89 5px; 
-    background-color: #B38CB4; 
+    background-color: #9EE493; 
     border-radius: 20px;
     padding: 10px; 
 }
@@ -71,12 +71,14 @@
 #name {
     font-size: 30px;
     color: #1D4E89; 
+    // font-weight: 2000px;
 }
 
 body {
-    background-color: #d7f8ff;
+    background-color: #F79256;
     // overflow: hidden;
     font-family: 'Source Sans 3', sans-serif; 
+    color: #1D4E89;
 }
 
 ::-webkit-scrollbar {
