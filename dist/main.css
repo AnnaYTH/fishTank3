@@ -21,6 +21,8 @@
 #vertical {
   flex-direction: column;
   height: 550px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #store {
