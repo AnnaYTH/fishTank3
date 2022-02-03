@@ -20,7 +20,7 @@ View.prototype.eventSet = function() {
     const tank01 = this.tank; 
     // add food on a click
     window.addEventListener("click", function(event) {
-        const offsetX = 150; 
+        const offsetX = 50; 
         const offsetY = 110; 
         // logic to only add food within the canvas window?
         if(tank01.money >= 5) {
