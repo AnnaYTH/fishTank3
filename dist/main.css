@@ -65,6 +65,8 @@
 #name {
   font-size: 30px;
   color: #1D4E89;
+  display: flex;
+  justify-content: center;
 }
 
 body {

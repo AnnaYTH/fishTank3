@@ -74,7 +74,16 @@
     font-size: 30px;
     color: #1D4E89; 
     // font-weight: 2000px;
+    display: flex; 
+    justify-content: center;
+    // border: red solid 5px; 
 }
+
+// .name {
+//     display: flex; 
+//     justify-content: center;
+//     border: red solid 5px; 
+// }
 
 body {
     background-color: #F79256;
