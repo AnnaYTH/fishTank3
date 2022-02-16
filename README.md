@@ -13,9 +13,9 @@ As your fish eats more it will also poop more. Suddenly all your neighobrs and f
 * Unlock new fish and customizations as you play more and more.
 * If you would like a shortcut please try to click "Watch Ad" 
 
-# Wireframe
+# Images
 
-![alt text](https://github.com/AnnaYTH/Fish_Feeder/blob/main/wireframe.png)
+![alt text](https://github.com/AnnaYTH/fishTank3/blob/main/meta_photo.png)
 
 # Technology 
 * Javascript

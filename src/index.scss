@@ -22,12 +22,10 @@
 
 #vertical {
     flex-direction: column;
-    // scroll-behavior: smooth;
-    // overflow-y: scroll; 
-    height: 550px; 
-    // overflow: hidden;
+    height: 40vw; 
     padding-left: 15px;
     padding-right: 15px; 
+    // box-shadow: 0 0 20px 0px black inset;
 }
 
 #store {
@@ -73,17 +71,9 @@
 #name {
     font-size: 30px;
     color: #1D4E89; 
-    // font-weight: 2000px;
     display: flex; 
     justify-content: center;
-    // border: red solid 5px; 
 }
-
-// .name {
-//     display: flex; 
-//     justify-content: center;
-//     border: red solid 5px; 
-// }
 
 body {
     background-color: #F79256;
@@ -97,7 +87,6 @@ body {
     background: transparent; /* make scrollbar transparent */
 }
 
- 
 .instruction {
     position: fixed; 
     left: 25%; 
@@ -130,14 +119,6 @@ body {
     border-radius: 20px;
     background-color: #FBD1A2;
 }
-
-// .left {
-//     position:fixed;
-// }
-
-// .vertical { 
-//     float:right;
-// }
 
 .win_condition {
     position: fixed; 

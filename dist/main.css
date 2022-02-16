@@ -20,7 +20,7 @@
 
 #vertical {
   flex-direction: column;
-  height: 550px;
+  height: 40vw;
   padding-left: 15px;
   padding-right: 15px;
 }
