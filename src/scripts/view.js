@@ -22,7 +22,6 @@ View.prototype.eventSet = function() {
     window.addEventListener("click", function(event) {
         const offsetX = 50; 
         const offsetY = 110; 
-        // logic to only add food within the canvas window?
         if(tank01.money >= 5) {
             if(event.clientX > 25 && event.clientX < 900 && event.clientY > 25 && event.clientY < 500) {
                 const foodParticle = new Food(
@@ -44,8 +43,6 @@ View.prototype.eventSet = function() {
     fishButton.addEventListener("click", function() {
         if(tank01.money >= 100) {
             tank01.money -= 100
-            // let size1 = 30 + (5 * (tank01.fishSize - 1))
-            // let first = tank01.fishes[0].size[0]
             const newFish = new Fish( 
                 {pos: [300, 300],
                 size: [30, 30], 
@@ -66,16 +63,6 @@ View.prototype.eventSet = function() {
     // refactored to allow fish of multiple sizes
     const fishSizeButton = document.getElementById('increase_fish_size')
     fishSizeButton.addEventListener("click", function() {
-        // if(tank01.money >= 5000 && tank01.fishSize < 10) {
-        //     tank01.money -= 5000; 
-        //     tank01.fishSize += 1; 
-        //     for(let i = 0; i < tank01.fishes.length; i++) {
-        //         let fish_instance = tank01.fishes[i]; 
-        //         fish_instance.size[0] += 5
-        //         fish_instance.size[1] += 5
-        //         // if I have a rectangle I'm doing to have to scale how much they increase to keep og dimension ratio the same
-        //     }
-        // }
         if(tank01.money >= 5000) {
             for(let i = 0; i < tank01.fishes.length; i++) {
                 let fish_instance = tank01.fishes[i]; 

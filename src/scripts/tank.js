@@ -27,10 +27,6 @@ function Tank() {
 
 Tank.prototype.draw = function(ctx) {
     ctx.clearRect(0, 0, 900, 500); 
-    // ctx.fillStyle = this.waterColor; 
-    // ctx.fillRect(0, 0, 900, 500); // water
-    // ctx.fillStyle = this.airColor; 
-    // ctx.fillRect(0, 0, 900, 25); // air
     const grid = ctx.createLinearGradient(0, -300, 0, 900)
     grid.addColorStop(0, this.airColor); 
     grid.addColorStop(1, this.waterColor)
@@ -100,13 +96,7 @@ function win(tank) {
 }
 
 Tank.prototype.moveObjects = function(ctx) {
-    // update statistics
     this.checkStats(); 
-    // if(this.money < 0) {
-    //     alert('Happy Birthday! Love Grandma')
-    //     alert('Grandma sent you $50')
-    //     this.money += 50; 
-    // }
 
     // moves all the food
     for(let i = 0; i < this.food.length; i++) {
@@ -156,21 +146,6 @@ Tank.prototype.addFish = function() {
         game: this
     })
     this.fishes.push(fish2); 
-}
-
-Tank.prototype.addFood = function(ctx) {
-    // let flake = new Food({
-    //     pos: [300, 25]
-    // })
-    // this.food.push(flake); 
-    // let flake2 = new Food({
-    //     pos: [800, 25]
-    // })
-    // this.food.push(flake2); 
-    // let flake3 = new Food({
-    //     pos:[100, 25]
-    // })
-    // this.food.push(flake3); 
 }
 
 Tank.prototype.nameTank = function() {
